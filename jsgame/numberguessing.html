@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Guessing Game</title>
+        <style>
+            html { 
+            font-family: sans-serif; 
+            } 
+        </style>
+    </head>
+    <body>
+        <h1>Number Guessing Game</h1>
+        <p>I have select a number between 1 and 100. See if you can guess it in 5 times!</p>
+        <div class="form"> 
+            <label for="guessField">Enter a guess: </label> 
+            <input type = "text" id = "guessField" class = "guessField"> 
+            <input type = "submit" value = "Submit guess" 
+                   class = "guessSubmit" id = "submitguess"> 
+        </div> 
+        <script>
+            var y = Math.floor(Math.random() * 100 + 1)
+            var counter = 1; 
+            document.getElementById("submitguess").onclick = function(){     
+            var x = document.getElementById("guessField").value; 
+  
+            if(x == y) {     
+                alert("Congratulations!!! You guessed it right in  "
+                        + counter + " guess "); 
+            } 
+            else if(x > y) {     
+                counter++; 
+                alert("Sorry! Try a smaller number"); 
+            } 
+            else{ 
+                counter++; 
+                alert("Sorry! Try a greater number");
+            } 
+            if (counter > 5){
+                alert("Game over! Refresh to start again");
+                            }
+
+            } 
+            </script> 
+        
+    </body>
+</html>
