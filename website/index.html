@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="Untitled.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js">
+    </script>
+    
+        <style type="text/css">
+            h1 {font-family: Anton; font-size:50px;}
+
+            html{
+                scroll-behavior: smooth;
+                }
+
+            .blank{
+                height: 70px;
+                position: relative;
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="cover">
+            <div class="navbar navbar-default navbar-inverse" style="position: fixed; z-index:99999; font-family: Anton; font-size:20px; height:70px">
+                <div class="container" style="background-color: black; height: 70px; width:100%;">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="font-size:20px">#HOME</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#overview">#OVERVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">#GALLERY</a>
+                            </li>
+                            <li>
+                                <a href="#shows">#SHOWS</a>
+                            </li>
+                            <li>
+                                <a href="#recommendations">#RECOMMENDATIONS</a>
+                            </li>
+                            <li>
+                                <a href="#contact">#CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="background-image-fixed cover-image" style="background-image : url('bg2.jpg')"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 style="font-family: Anton; color: white; font-size: 88px">FIND MUSIC FESTIVALS IN CHINA</h1>
+                        <p style="color: white;">Enjoy music festivals, enjoy youth!</p>
+                        <br>
+                        <br>
+                        <a class="btn btn-lg btn-default" style="background-color: yellow; font-family: Anton; font-size: 24px"
+                        href="#shows">UPCOMING SHOWS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank" id="overview"></div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">MUSIC FESTIVALS OVERVIEW
+                            <br>
+                            <br>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/i__1Z5a9Sak"
+                                allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">TYPES OF MUSIC FESTIVALS</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank" id="gallery"></div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">GALLERY
+                            <br>
+                            <br>
+                        </h1>
+                        <div id="carousel-example" data-interval="5000" class="carousel slide"
+                        data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="007efA4Sgy1g8l972pgvxj315o0m2ayq.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="2.jpg">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="icon-prev fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><i class="icon-next fa fa-angle-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col-md-12" align="center">
+                        <a class="btn btn-default btn-lg" style="background-color: yellow; font-family: Anton; font-size: 24px">SEE MORE PICTURES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank" id="shows"></div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">UPCOMING SHOWS</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p style="font-size:30px" contenteditable="true">30/11 &nbsp; &nbsp;Straberry Music Festival</p>
+                        <p style="font-size:30px"
+                        contenteditable="true">07/12 &nbsp; &nbsp;Creamfield Music Festival</p>
+                        <p style="font-size:30px"
+                        contenteditable="true">13/12 &nbsp; &nbsp;WR/OC Music Festival</p>
+                        <p style="font-size:30px" contenteditable="true">14/12 &nbsp; &nbsp;WR/OC Music Festival</p>
+                        <p style="font-size:30px" contenteditable="true">15/12 &nbsp; &nbsp;WR/OC Music Festival</p>
+                        <div class="row">
+                            <div class="col-md-12" align="center">
+                                <a class="btn btn-default" style="background-color: yellow; font-family: Anton; font-size: 24px">SEE MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <p style="font-size:30px; color:white" contenteditable="true">Guangzhou</p>
+                        <p style="font-size:30px; color:white" contenteditable="true">Guangzhou</p>
+                        <p style="font-size:30px; color:white" contenteditable="true">Chengdu</p>
+                        <p style="font-size:30px; color:white" contenteditable="true">Shanghai</p>
+                        <p style="font-size:30px; color:white" contenteditable="true">Beijing</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div id="map" style="height:800px; width: 800px"></div>$
+
+        <script>
+            var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,});
+            var map = L.map('map')
+                  .addLayer(mapboxTiles)
+                  .setView([34.4494354, 86.039303], 13);
+            var items = [];
+            var airtable_read_endpoint = "https://api.airtable.com/v0/appWDkWqp3VqMgRfw/Upcoming%20Shows%20on%20Map?maxRecords=3&view=Grid%20view?api_key=keyCcWhXbfv6rNvh2";
+            var data = [];
+            $.getJSON(airtable_read_endpoint, function(result) {
+                   $.each(result.records, function(key,value) {
+                       items = {};
+                           items["name"] = value.fields.Name;
+                           items["pic"] = value.fields.Post;
+                           items["latitud"] = value.fields.lat;
+                           items["longitud"] = value.fields.lng;
+                           items["pic_url"] = value.fields.Post_url;
+                           items["url"] = value.fields.url;
+                           data.push(items);
+                           console.log(items);
+                    }); 
+            }); 
+            var marker= L.marker([34.4494354, 86.039303])
+                .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].pic_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+                .addTo(map);
+          </script>
+
+
+        <div class="blank" id="recommendations"></div>
+        <div class="section" style="background-color: #d500f9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">RECOMMENDATIONS</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe class="airtable-embed" src="https://airtable.com/embed/shrZoEtjI6agcN79k?backgroundColor=yellow&amp;viewControls=on"
+                        frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center" style="color: white; font-size: 20px">*OUR RECOMMENDATIONS ARE BASED ON</p>
+                        <div class="col-md-12" align="center">
+                            <a class="btn btn-default" style="background-color: yellow; font-family: Anton; font-size: 24px">CLICK TO CHECK</a>
+                        </div>
+                        <div class="col-md-12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank" id="contact"></div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1 class="text-center">CONTACT US</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row"></div>
+                                <div class="row">
+                                    <div class="col-md-12" align="center">
+                                        <button type="submit" class="btn btn-default">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background-color: black;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled" style="color:white; font-size: 22px; font-family: Anton">
+                            <li>
+                                <a href="#overview">#OVERVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">#GALLERY</a>
+                            </li>
+                            <li>
+                                <a href="#shows">#SHOWS</a>
+                            </li>
+                            <li>
+                                <a href="#recommendations">#RECOMMENDATION</a>
+                            </li>
+                            <li>
+                                <a href="#contact">#CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="color: grey" contenteditable="true" class="text-center">
+                            <br>
+                            <br>Copyright © 2019 All Rights Reserved | Designed by GAO Tianshu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
