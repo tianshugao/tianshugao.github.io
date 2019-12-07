@@ -655,9 +655,28 @@ header.masthead .intro-text .intro-heading {
 }
 
 #schedule .schedule-item h4 {
+  color:#0c1114;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
+}
+
+#schedule .schedule-item a {
+  color:#0c1114;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: 'Montserrat';
+}
+
+#schedule .schedule-item a:hover {
+  color:#0c1114;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: 'Montserrat';
+
 }
 
 #schedule .schedule-item h4 span {
