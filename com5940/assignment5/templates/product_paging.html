@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+  {% for product in products.items %}
+       {% if loop.index == 1 %}{% set counter = ( counter | default(1) ) %}{% endif %}
+        {% if counter == 1 %}<div class="row">{% endif %}
+             <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src={{ product.Post_url}} width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">Col#:{{ loop.index }}<br>ID:{{ product.ID }}<br>Name:{{ product.Name }}<br>Genre:{{ product.Genre }}<br>Active Years:{{ product.Years_active }}<br>Venue in China:{{ product.Venue_in_China}}<br>Popularity:{{ product.Popularity }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+            
+       {% if counter == 3 %}</div><!--end row-->{%  set counter = ( counter | default(1) ) %}{% else %}{% set counter = ( counter | default(0) ) + 1 %}{% endif %}
+  {% endfor %}
+  <div class="container" style="float: left;">
+  {% for page in products.iter_pages() %}  
+    {% if page %}
+        <a href="{{url_for('album')}}/{{ page }}">{{ page }}</a>
+    {% else %}
+        ...
+    {% endif %}
+  {% endfor %}  
+  </div>
+{% endblock %}
